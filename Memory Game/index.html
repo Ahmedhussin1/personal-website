@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">The Memory Game<span><i class="fa-duotone fa-alien-8bit"></i></span></h1>
+    <h2 id="state">Let's See What You Got </h3>
+    <div class="grid">
+        <div class="displayImg" id="grid"></div>
+        <div id="wonImg"><img src="images/172-1725251_you-win-png-monochrome-transparent-png.png" alt=""></div>
+    </div>
+    <h3>Score: <span id="result"></span></h3>
+    <div class="refresh">
+        <button onClick="window.location.reload();" class="playAgain"id="playAgain">play again <span><i class="fa-solid fa-rotate-right"></i></span></button>
+    </div>
+    <script src="https://kit.fontawesome.com/bdd652c650.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
