@@ -223,8 +223,11 @@ section{
     font-size: 1.3em;
     padding:0px 12px;
 }
-
+.contact .card{
+    cursor: pointer;
+}
 @media (max-width:1023px){
+
     header{
         padding:12px 10px;
     }
@@ -243,14 +246,14 @@ section{
     }
     .main h2{
         font-size: 1em;
-        color: black;
+        color: white;
     }
     .main h3{
         font-size: 1.6em;
-        color: black;
+        color: white;
     }
     .main .social-media a{
-        color: black;
+        color: white;
     }
     .main .social-media a:hover{
         color: #3a6cf4;

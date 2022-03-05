@@ -1,28 +1,5 @@
-const openModelButton = document.querySelectorAll('[data-model-target]');
-const closeModelButton = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementById('overlay');
-
-openModelButton.forEach(button=>{
-    button.addEventListener('click' , ()=>{
-        const model = document.get.querySelector(button.dataset.modelTarget)
-        openModel(model)
-    })
+const linkedin = document.getElementById('#linked')
+// when clicking on the div it take you to the linked in profile 
+linkedin.addEventListener('click',()=> {
+    window.location.href='https://www.linkedin.com/in/ahmed-mohamed-hussein-b6b552202/'
 })
-closeModelButton.forEach(button=>{
-    button.addEventListener('click' , ()=>{
-        const model = button.closest('.model')
-        closeModel(model)
-    })
-})
-
-function openModel(model){
-    if(model===null) return;
-    model.classList.add('active')
-    overlay.classList.add('active')
-}
-
-function closeModel(model){
-    if(model===null) return;
-    model.classList.remove('active')
-    overlay.classList.remove('active')
-}
