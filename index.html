@@ -182,7 +182,7 @@
         <h2 class="title">Contact</h2>
 
         <div class="content" >
-            <div class="card" id="open">
+            <div class="card" id="open-phone">
                 <div class="icon">
                 <i class="fa-solid fa-phone"></i>
                 </div>
@@ -191,8 +191,8 @@
                 </div>
             </div>
 
-            <!-- model popup -->
-            <div class="model-container" id="model-container">
+            <!-- phone model popup -->
+            <div class="model-container" id="model-container-phone">
                 <div class="model show">
                     <h1>Business Contact Number</h1>
 
@@ -201,7 +201,7 @@
                     </p>
 
                     <div class="btn">
-                        <button id="close-btn">
+                        <button id="close-phone-btn">
                             Close
                         </button>
                     </div>
@@ -210,7 +210,7 @@
             </div>
             <!--*****************-->
 
-            <div class="card">
+            <div class="card" id="open-email">
                 <div class="icon">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
@@ -219,8 +219,26 @@
                     <p class="email"></p>
                 </div>
             </div>
-            
 
+            <!-- email popup model -->
+            <div id="model-container-email" class="model-container-email">
+                <div class="email-model">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <h1>Contact Me</h1>
+                        <input type="text" id="name" placeholder="Enter Your Name" required>
+                        <input type="text" id="email" placeholder="Email Address" required>
+                        <input type="text" id="phone" placeholder="phone Number" required>
+                        <textarea id="message" rows="4" placeholder="Enter the subject please "></textarea>
+                        <textarea id="message" rows="4" placeholder="How can i help you"></textarea>
+                        <button class="submit-btn" type="submit">Send</button>
+                    </form>
+                    <div class="form-btn">
+                        <button class="close-btn" id="close-email-btn">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ***************** -->
             <div id ="linked" class="card">
                 <div class="icon">
                     <i class="fa-brands fa-linkedin"></i>
@@ -242,7 +260,7 @@
                 <a href="https://www.facebook.com/ahmed.hussin.79656921"><i class="fa-brands fa-facebook"></i></a>
         </div>
     </footer>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://kit.fontawesome.com/bdd652c650.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 
