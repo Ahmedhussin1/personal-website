@@ -104,10 +104,6 @@ section{
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    grid-gap: 1rem; */
 }
 .card{
     background-color: #FDFBFA;
@@ -150,7 +146,8 @@ section{
     text-align: center;
 }
 .projects{
-    background-color:#A3D8F4
+    background-color:#A3D8F4;
+    padding: 100px 50px;
 }
 .projects .content{
     margin-top: 30px;

@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    scroll-behavior: smooth;
+}
+/* first section */
+header{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    background-color: #EEEEEE;
+    position: fixed;
+    z-index: 999;
+}
+.main{
+    width:100%;
+    min-height: 100vh;
+    display:flex;
+    background-size: cover;
+    background-position:center;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background:url(/images/c06c87d843eb6a7d6d6ba1947b638acb.jpg) ;
+}
+.main .main-desc{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding:200px;
+}
+.logo{
+    color:#F76E11;
+    font-size: 30px;
+    font-weight: 00;
+    letter-spacing: 1px;
+}
+.navigation a{
+    padding:0px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:500px;
+    color:#5D8BF4 ;
+}
+.main-desc span{
+    color: #F76E11;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+.main-desc a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: #F76E11;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+    padding:20px 40px;
+    width: fit-content;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+@media (max-width:1023px){
+    header{
+        padding:10px 10px;
+    }
+    .navigation a{
+        font-size: 10px;
+        padding: 0px 5px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .main .main-desc{
+        margin-left: 50px;
+    }
+}
+@media (max-width:641px){
+    header{
+        padding:10px 10px;
+        font-size: 5px;
+    }
+    .main .main-desc{
+        margin-left: 20px;
+    }
+}
+/* ********************************* */
+
+/* images section */
+.art-section{
+    margin-top: 20px;
+}
+.art-section h2{
+    color: #F76E11;
+    font-size: 30px;
+    font-weight:500;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding:60px;
+    
+}
+.img-gallery{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+.cards{
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+}
+.cards p{
+    margin-top: 20px;
+}
+.cards img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+    transition: 0.7s ease ;
+}
+.cards img:hover{
+    transform: scale(1.05);
+    box-shadow: 3px 3px 10px black ;
+}
+@media (max-width:1023px){
+    .img-gallery{
+        grid-template-columns:1fr;
+        justify-content: center;
+    }
+}
+@media (max-width:641px){
+    .img-gallery{
+        grid-template-columns:1fr;
+    }
+}
+/* *********************************/
+
+/* contact section */
+
+/* section */
+.contact{
+    background-color: #3a6cf4;
+}
+.contact h1{
+    display: flex;
+    justify-content: center;
+    color: #EEEEEE;
+    font-size: 2.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 30px;
+}
+/* div carrying all cards */
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction: row;
+}
+/* div holding card */
+.contact-cards{
+    background-color:#EEEEEE ;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px 30px;
+    width: 19.25em;
+    transition: 0.7s ease;
+}
+.contact-cards:hover{
+    transform: scale(1.1);
+}
+.contact-cards i{
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+    color: #F76E11;
+    text-align: center;
+}
+.contact-cards a{
+    text-decoration: none;
+    color: #3a6cf4;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+/* ************** */
+
+/* footer */
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+.footer-title{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: #3a6cf4;
+}
+.footer .social-media a{
+    font-size: 1.3em;
+    padding:0px 12px;
+    color: white;
+}
