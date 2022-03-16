@@ -9,6 +9,7 @@ let result;
 possibleChoices.forEach(possibleChoices=>possibleChoices.addEventListener('click' ,(e)=>{
     your=e.target.id
     yourDisplay.innerHTML=your
+    yourDisplay.style.color='blue';
     generateComputerChoice()
     getResult()
 }))
@@ -24,6 +25,7 @@ function generateComputerChoice(){
     if(randomNumber=='3'){
         computer='scissors';
     }
+    computerDisplay.style.color='yellow'
     computerDisplay.innerHTML=computer;
 }
 function getResult(){
@@ -57,6 +59,6 @@ function getResult(){
         resultDisplay.style.color="green"
     }
     if(resultDisplay.innerHTML=='DRAW'){
-        resultDisplay.style.color="blue"
+        resultDisplay.style.color="gray"
     }
 }

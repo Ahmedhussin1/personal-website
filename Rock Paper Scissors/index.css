@@ -18,7 +18,7 @@ body{
 .game{
     display: flex;
     justify-content: space-between;
-    margin:50px 550px;
+    margin:50px 400px;
     color: white;
 }
 .result{
@@ -29,7 +29,17 @@ body{
 .choices{
     display: flex;
     justify-content: space-between;
-    margin: 100px 650px;
+    margin: 100px 400px;
+}
+@media only screen {
+    .game{
+        margin:100px 15px;
+        font-size: 10px;
+    }
+    .choices{
+        margin: 100px 10px;
+
+    }
 }
 .choices button{
     border-radius: 20px;

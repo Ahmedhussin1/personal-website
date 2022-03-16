@@ -416,7 +416,9 @@ form{
     body{
         font-size: 12px;
     }
-
+    .main{
+        padding-left: 50px;
+    }
     .main h2{
         font-size: 0.8em;
     }
