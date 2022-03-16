@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+:root{
+    --cell-size:100px;
+    --mark-size: calc(var(--cell-size) * .8);
+}
+body{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.turn-class{
+    margin-top: 50px;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+@media only screen {
+    .turn-class{
+        font-size: 2rem;
+    }
+}
+.board{
+    width: 100vw;
+    height:100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,auto);
+}
+.cell{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top: none;
+}
+.cell:nth-child(3n+1){
+    border-left: none;
+}
+.cell:nth-child(3n){
+    border-right: none;
+}
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9){
+    border-bottom: none;
+}
+.cell.x,
+.cell.circle{
+    cursor: not-allowed;
+}
+.cell.x::before,
+.cell.x::after{
+    content: '';
+    width: calc(var(--mark-size)* .15);
+    height: var(--mark-size);
+    position: absolute;
+    background-color: black;
+}
+.cell.x::before{
+    transform: rotate(45deg);
+}
+.cell.x::after{
+    transform: rotate(-45deg);
+}
+.cell.circle::before,
+.cell.circle::after{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+}
+.cell.circle::before{
+    width: var(--mark-size);
+    height: var(--mark-size);
+    background-color: black;
+}
+.cell.circle::after{
+    width: calc(var(--mark-size)* 0.8);
+    height: calc(var(--mark-size)* 0.8);
+    background-color: white;
+}
+.winning-massage{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 5rem;
+    flex-direction: column;
+    padding: 20px;
+}
+.winning-massage button{
+    font-size: 3rem;
+    background-color: white;
+    border:1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.winning-massage :hover{
+
+}
+@media only screen {
+    .winning-massage{
+        font-size: 2rem;
+    }
+    .winning-massage button{
+        font-size: 2rem;
+    }
+}
+.winning-massage.show{
+    display: flex;
+}
