@@ -21,7 +21,9 @@ body{
 }
 @media only screen {
     .turn-class{
-        font-size: 2rem;
+        font-size: 1rem;
+        padding: 20px;
+        margin-top: 20px;
     }
 }
 .board{
